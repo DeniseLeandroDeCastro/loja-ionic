@@ -1,0 +1,44 @@
+#container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 15px;
+  line-height: 10px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 10px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-fab-button {
+  height: 70px;
+  width: 70px;
+}
+
+.cart-icon {
+  font-size: 50px;
+}
+
+.cart-length {
+  color: var(--ion-color-primary);
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  font-weight: 700;
+  font-size: 10px;
+  z-index: 10;
+}
