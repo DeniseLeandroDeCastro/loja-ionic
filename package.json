@@ -22,6 +22,7 @@
     "@ionic-native/file": "^5.31.1",
     "@ionic/angular": "^5.5.2",
     "animate.css": "^4.1.1",
+    "ionic-img-viewer": "^2.9.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

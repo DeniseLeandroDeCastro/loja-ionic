@@ -26,7 +26,13 @@
               </ion-label>
             </ion-col>
           </ion-row>
-          
+          <div *ngIf="p.promocao == true">
+            <ion-badge color="primary">
+              <ion-icon name="star"></ion-icon>
+               Produto em PROMOÇÃO
+              <ion-icon name="star"></ion-icon>
+            </ion-badge>
+          </div>
           <ion-row class="ion-align-items-center">
             <ion-col size="2" class="ion-align-self-center">
               <ion-button color="medium" fill="clear" (click)="subtrairProdutoItem(p)">
@@ -75,7 +81,7 @@
       </ion-item>
     </ion-list>
     <ion-button expand="full" (click)="checkout()">
-      Fazer Pedido
+      CONFIRMAR COMPRA
     </ion-button>
   </div>
 </ion-content>

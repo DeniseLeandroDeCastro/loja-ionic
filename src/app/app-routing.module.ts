@@ -14,7 +14,7 @@ const routes: Routes = [
   {
     path: 'carrinho-modal',
     loadChildren: () => import('./paginas/carrinho-modal/carrinho-modal.module').then( m => m.CarrinhoModalPageModule)
-  },
+  }
 ];
 
 @NgModule({

@@ -39,8 +39,8 @@ export class CarrinhoModalPage implements OnInit {
 
   async checkout() {
     let alert = await this.alertCtrl.create({
-      header: 'Obrigado pelo seu pedido!',
-      message: 'Nós entregaremos sua bebiba o mais rápido possível',
+      header: 'Agradecemos a preferência!',
+      message: 'FIQUE EM CASA E SE PRECISAR SAIR USE MÁSCARA!',
       buttons: ['OK']
     });
     alert.present().then(()=>{

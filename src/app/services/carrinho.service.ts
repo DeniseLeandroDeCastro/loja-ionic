@@ -18,12 +18,12 @@ export interface Produto {
 export class CarrinhoService {
 
   data: Produto[] = [
-    {id: 1, nome: 'Coca-Cola', 
-     descricao: 'Coca-cola', 
-     preco: 3.00, 
+    {id: 1, nome: 'Coca-Cola com 10% desc.', 
+     descricao: 'Valor: R$ 3,00', 
+     preco: 3.00 - (3 * 0.1), 
      url: './assets/coca-cola.webp', 
      quantidade: 10, 
-     promocao: false, 
+     promocao: true, 
      tipo: 'refrigerante 600ml'},
 
     {id: 2, nome: 'Guaraná', 
@@ -44,18 +44,18 @@ export class CarrinhoService {
      tipo: 'refrigerante 600ml'},
 
     {id: 4, 
-     nome: 'Vinho Tinto Dona Paula', 
-     descricao: 'kit 2 garrafas de 750ml', 
-     preco: 97.47, 
+     nome: 'Vinho Dona Paula com 20% desc.', 
+     descricao: 'Valor: R$ 97,47.', 
+     preco: 97.47  - (97.47 * 0.2), 
      url: './assets/vinho-dona-paula.jpg', 
      quantidade: 5, 
      promocao: true, 
      tipo: 'Cabernet Sauvignon'},
 
     {id: 5, 
-     nome: 'Vinho Concha', 
-     descricao: 'Garrafa com 750ml', 
-     preco: 43.00, 
+     nome: 'Vinho Concha com 20% desc.', 
+     descricao: 'Valor: R$ 43,00.', 
+     preco: 43.00  - (43 * 0.2), 
      url: './assets/vinho-concha.jpg', 
      quantidade: 5, 
      promocao: true, 
@@ -95,7 +95,7 @@ export class CarrinhoService {
     }
     this.cartItemCount.next(this.cartItemCount.value + 1);
   }
-
+  
   subtrairProduto(produto) {
     for(let [index, p] of this.carrinho.entries()) {
       if(p.id === produto.id) {
